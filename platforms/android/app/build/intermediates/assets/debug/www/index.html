@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Camera App with GeoLocation</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Camera Geo App</h1>
+            <div id="deviceready" class="blink">
+            <button id onClick="cameraTakePhoto()">Take a Photo</button>   
+            <img id="myImage" height="130" width="130" />
+            <p id="myLocation"></p>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>-->
+    </body>
+</html>
