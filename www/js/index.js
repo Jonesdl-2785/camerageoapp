@@ -16,8 +16,9 @@ var app = {
 app.initialize();
 var myImage = document.getElementById('myImage');
 var myLocation = document.getElementById('myLocation');
-var Latitude;
-var Longitude;
+var Latitude = undefined;
+var Longitude = undefined;
+var Timestamp = newDate();
 
 // Take photo, get Location
 function cameraTakePhoto() {
@@ -37,7 +38,7 @@ var onGeoLocationSuccess = function(position) {
 	);*/
 	Latitude = position.coords.latitude;
     Longitude = position.coords.longitude;
-    Timestamp = new Date();
+    Timestamp = newDate();
     navigator.camera.getPicture(onCameraSuccess, onCameraError);
 }
 
